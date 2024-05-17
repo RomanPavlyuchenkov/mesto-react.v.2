@@ -11,6 +11,7 @@ function PopupWithForm(props) {
         <form
           className={`popup__form popup__form_type_${props.name}`}
           noValidate
+          onSubmit={onSubmit}
         >
           {props.children}
           <button type="submit" className="popup__button">
